@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background: #9da2a7;
+      color: #fff;
+      padding: 0px 1.5rem 0 0rem;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+     nav a {
+      color: #141414;
+      text-decoration: none;
+      padding: 4px 10px;
+      border:none;
+      border-radius: 12px;
+      margin-right: 1rem;
+      background-color: #fff;
+    
+    }
+    nav a:hover {
+      background-color: #16f1f1;
+      color: #333;
+      transition: ease;
+    }
+    a.active {
+      background-color: #16f1f1;
+      color: #333;
+    }
+    footer {
+      background-color: #a39e9e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+     
+    }
+    .container {
+      width: 100%;
+      height: 500px;
+      margin: 0rem auto;
+      padding: 2rem;
+       background:url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783178/Untitled_design_1_w1csvu.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 60px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button, .home-button {
+      padding: 8px 6px;
+      background-color: #f75d05;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      text-align: center;
+    }
+    button:hover, .home-button:hover {
+      background-color: #dabc14;
+    }
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+        .logo {
+      display: flex;
+      height: auto;
+
+    }
+
+    .logo img {
+      width: 80px;
+      position: relative;
+    }
+      .toggle {
+      display: none;
+    }
+
+    @media (max-width: 480px){
+    nav{
+      display: none;
+     }
+     .toggle {
+      display: block;
+      
+    }
+  }
+   .nav2 a{
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    width: 50%;
+   }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 20px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+        <img src="https://res.cloudinary.com/dhqg6vmko/image/upload/v1753269348/ChatGPT_Image_Jul_23__2025__02_06_56_PM-removebg-preview_icbrlm.png" alt="">
+      </div>
+      <nav>
+       <a href="index.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="services.html">Services</a>
+       <a href="portfolio.html">Portfolio</a>
+       <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <div class="toggle"id="toggle">
+      <i class="fa fa-bars" onClick="document.getElementById('navbar').style.display='block'" style="color: #fff; font-size: 24px;margin-right: 10px;cursor: pointer;"></i>
+    </div>
+  </header>
+
+    <div class="nav2"id="navbar" style="display: none;background-color: transparent;width: 20%;height:40vh;position: fixed;top: 60px;left: 0;z-index: 1000;">
+    <div class="remove"><p style="color:#fff;float:right;padding-right:4px;cursor:pointer;"
+      onclick="document.getElementById('navbar').style.display='none'">X</p></div>
+      <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="services.html">Services</a>
+     <a href="portfolio.html">Portfolio</a>
+     <a href="contact.html"class="active">Contact</a>
+
+
+     </div>
+
+  <div class="container">
+    <div class="contact-info">
+      <p><strong>Email:</strong> smartinsdesign40@gmail.com</p>
+      <p><strong>Mobile:</strong> +254 112 550 085</p>
+    </div>
+
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <a href="https://wa.me/254112550085" class="whatsapp-float" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+  </a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Custom Website</p>
+  </footer>
+
+</body>
+</html>

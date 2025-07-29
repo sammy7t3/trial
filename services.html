@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    header {
+      background: #9da2a7;
+      color: #fff;
+      padding: 0px 1.5rem 0 0rem;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #9a9c9e;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav {
+      margin-top: 0.5rem;
+    }
+     nav a {
+      color: #141414;
+      text-decoration: none;
+      padding: 4px 10px;
+      border:none;
+      border-radius: 12px;
+      margin-right: 1rem;
+      background-color: #fff;
+    
+    }
+    nav a:hover {
+      background-color: #16f1f1;
+      color: #333;
+      transition: ease;
+    }
+    a.active {
+      background-color: #16f1f1;
+      color: #333;
+    }
+    .container {
+      width: 100%;
+      height: 600px;
+      margin-top: 60px;
+      background:url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783178/Untitled_design_1_w1csvu.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: None;
+      box-shadow: 0 2px 8px rgba(12, 12, 12, 0.1);
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      
+      justify-content: space-between;
+    }
+    .service {
+      flex: 1 1 280px;
+      background: #5fdaea;
+      padding-inline: 2rem;
+      padding: 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+    .service h3 {
+      margin-top: 0;
+    }
+    .service p {
+      color: #ffffff;
+    }
+
+    .logo {
+      display: flex;
+      height: auto;
+
+    }
+
+    .logo img {
+      width: 80px;
+      position: relative;
+    }
+      .toggle {
+      display: none;
+    }
+
+    @media (max-width: 480px){
+    nav{
+      display: none;
+     }
+     .toggle {
+      display: block;
+      
+    }
+  }
+   .nav2 a{
+    display: block;
+    color: #070707;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    width: 50%;
+   }
+    
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <div class="logo">
+        <img src="https://res.cloudinary.com/dhqg6vmko/image/upload/v1753269348/ChatGPT_Image_Jul_23__2025__02_06_56_PM-removebg-preview_icbrlm.png" alt="">
+      </div>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="toggle"id="toggle">
+      <i class="fa fa-bars" onClick="document.getElementById('navbar').style.display='block'" style="color: #fff; font-size: 24px;margin-right: 10px;cursor: pointer;"></i>
+    </div>
+  </header>
+    <div class="nav2"id="navbar" style="display: none;background-color: transparent;width: 20%;height:40vh;position: fixed;top: 60px;left: 0;z-index: 1000;">
+    <div class="remove"><p style="color:#fff;float:right;padding-right:4px;cursor:pointer;"
+      onclick="document.getElementById('navbar').style.display='none'">X</p></div>
+      <a href="index.html">Home</a>
+     <a href="about.html">About</a>
+     <a href="services.html"class="active">Services</a>
+     <a href="portfolio.html">Portfolio</a>
+     <a href="contact.html">Contact</a>
+
+
+     </div>
+
+  <div class="container">
+    <h2 style="padding-top: 50px;margin-bottom: 20px;">What We Offer</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Web Design</h3>
+        <p>Custom, responsive, and user-friendly website designs that represent your brand.</p>
+      </div>
+      <div class="service">
+        <h3>Development</h3>
+        <p>Front-end and back-end development for dynamic and functional websites.</p>
+      </div>
+      <div class="service">
+        <h3>SEO Optimization</h3>
+        <p>Improve your search engine rankings and drive traffic with tailored SEO strategies.</p>
+      </div>
+      <div class="service">
+        <h3>Maintenance</h3>
+        <p>Ongoing support, updates, and security monitoring for your website's performance.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Custom Website</p>
+  </footer>
+
+</body>
+</html>

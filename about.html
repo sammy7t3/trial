@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    header {
+      background: #9da2a7;
+      color: #fff;
+      padding: 0px 1.5rem 0 0rem;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      
+    }
+    footer {
+      background-color: #a8acb1;
+      color: white;
+      text-align: center;
+      padding: 0.5rem;
+    }
+    .container {
+      width: 100%;
+      margin: 0rem auto;
+      padding: 2rem;
+      background: rgb(76, 191, 236);
+      border-radius: 0px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+   nav a {
+      color: #141414;
+      text-decoration: none;
+      padding: 4px 10px;
+      border:none;
+      border-radius: 12px;
+      margin-right: 1rem;
+      background-color: #fff;
+    
+    }
+    a.active {
+      background-color: #16f1f1;
+      color: #333;
+    }
+
+    nav a:hover {
+      background-color: #16f1f1;
+      color: #333;
+      transition: ease;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+    .about-section {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .about-section p {
+      line-height: 1.6;
+    }
+    .logo {
+      display: flex;
+      height: auto;
+
+    }
+     .logo img {
+      width: 80px;
+      position: relative;
+    }
+      .toggle {
+      display: none;
+    }
+
+    @media (max-width: 480px){
+    nav{
+      display: none;
+     }
+     .toggle {
+      display: block;
+      
+    }
+  }
+   .nav2 a{
+    display: block;
+    color: #fff;
+    margin-top: 10px;
+    text-decoration: none;
+    padding: 10px;
+    width: 50%;
+   }
+  </style>
+</head>
+<body>
+
+  <header>
+  
+      <div class="logo">
+        <img src="https://res.cloudinary.com/dhqg6vmko/image/upload/v1753269348/ChatGPT_Image_Jul_23__2025__02_06_56_PM-removebg-preview_icbrlm.png" alt="">
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="toggle"id="toggle">
+      <i class="fa fa-bars" onClick="document.getElementById('navbar').style.display='block'" style="color: #fff; font-size: 24px;margin-right: 10px;cursor: pointer;"></i>
+    </div>
+  </header>
+
+    <div class="nav2"id="navbar" style="display: none;background-color: transparent;width: 20%;height:40vh;position: fixed;top: 60px;left: 0;z-index: 1000;">
+    <div class="remove"><p style="color:#fff;float:right;padding-right:4px;cursor:pointer;"
+      onclick="document.getElementById('navbar').style.display='none'">X</p></div>
+      <a href="index.html">Home</a>
+     <a href="about.html"class="active">About</a>
+     <a href="services.html">Services</a>
+     <a href="portfolio.html">Portfolio</a>
+     <a href="contact.html">Contact</a>
+
+
+     </div>
+
+  <div class="container">
+    <section class="about-section">
+      <h2>Who We Are</h2>
+      <p>We are a team of passionate designers and developers dedicated to building beautiful, functional websites that meet your unique needs.</p>
+
+      <h2>Our Mission</h2>
+      <p>Our mission is to deliver high-quality web experiences through clean code, thoughtful design, and responsive interfaces. We believe in simplicity, efficiency, and user-focused design.</p>
+
+      <h2>Why Choose Us</h2>
+      <p>With a commitment to excellence and a focus on custom solutions, we offer personalized service and reliable support to help you achieve your digital goals.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 My Custom Website</p>
+  </footer>
+
+</body>
+</html>
