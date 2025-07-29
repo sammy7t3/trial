@@ -4,160 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Custom Website</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background-color: #1b97eb;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #9da2a7;
-      color: #fff;
-      padding: 0px 1.5rem 0 0rem;
-      height: 60px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      
-    }
-    /* .container {
-      width: 100%; 
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    } */
-   
-    nav a {
-      color: #141414;
-      text-decoration: none;
-      padding: 4px 10px;
-      border:none;
-      border-radius: 12px;
-      margin-right: 1rem;
-      background-color: #fff;
-    
-    }
-    nav a:hover {
-      background-color: #16f1f1;
-      color: #333;
-      transition: ease;
-    }
-    a.active {
-      background-color: #16f1f1;
-      color: #333;
-    }
-    .hero {
-      background:url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783178/Untitled_design_1_w1csvu.png);
-      height: 100vh;
-      background-size:cover;
-      background-position:center;
-      background-repeat:no-repeat;
-      padding: 40px 0;
-      display: flex;
-      justify-content: center;
-    }
-    .hero .container {
-      align-items: center;
-      text-align: center;
-      height: 100vh;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-
-    }
-    .section-title {
-      margin-bottom: 20px;
-      font-size: 24px;
-    }
-    .card-section, .pages-preview {
-      padding: 40px 20px;
-      display: flex;
-      justify-content: center;
-    }
-    .card-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-
-    }
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      flex: 1 1 250px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .btn {
-      margin-top: 10px;
-      padding: 6px 12px;
-      background: #333;
-      color: white;
-      text-decoration: none;
-      border-radius: 14px;
-      background-color: #0c7a96;
-    }
-    .btn:hover {
-      background: #07bbf1;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #333;
-      color: white;
-      margin-top: 40px;
-    }
-
-    .logo {
-      display: flex;
-      height: auto;
-
-    }
-
-    .logo img {
-      width: 80px;
-      position: relative;
-    }
-      .toggle {
-      display: none;
-    }
-
-    @media (max-width: 480px){
-    nav{
-      display: none;
-     }
-     .toggle {
-      display: block;
-      
-    }
-  }
-   .nav2 a{
-    display: block;
-    color: #060606;
-    margin-top: 10px;
-    text-decoration: none;
-    padding: 10px;
-    width: 50%;
-   }
-
-
-     
-  </style>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
 
@@ -180,9 +28,10 @@
     
   </header>
 
-    <div class="nav2"id="navbar" style="display: none;background-color: transparent;width: 20%;height:40vh;position: fixed;top: 60px;left: 0;z-index: 1000;">
-    <div class="remove"><p style="color:#fff;float:right;padding-right:4px;cursor:pointer;"
-      onclick="document.getElementById('navbar').style.display='none'">X</p></div>
+    <div class="nav2" id="navbar">
+    <div class="remove">
+      <p onclick="document.getElementById('navbar').style.display='none'">X</p>
+    </div>
       <a href="index.html"class="active">Home</a>
      <a href="about.html">About</a>
      <a href="services.html">Services</a>
