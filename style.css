@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9;
+  background-color: #37dde9;
   color: #333;
   line-height: 1.6;
 }
@@ -186,6 +186,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  height: 100vh;
 }
 
 .about-section p {
@@ -195,10 +196,10 @@ nav a:hover {
 /* Contact page specific styles */
 .contact-container {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   margin: 60px auto 0;
   padding: 2rem;
-  background: url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783178/Untitled_design_1_w1csvu.png);
+  background: url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783496/pexels-junior-teixeira-1064069-2047905_fq6qtg.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -213,10 +214,12 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  color: #fff;
 }
 
 label {
   font-weight: bold;
+  color: #fff;
 }
 
 input, textarea {
@@ -334,7 +337,7 @@ button:hover {
 
 .services-container {
   width: 100%;
-  height: 600px;
+  height: 100vh;
   margin-top: 60px;
   background: url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783178/Untitled_design_1_w1csvu.png);
   background-size: cover;
@@ -351,7 +354,7 @@ button:hover {
   height: 100vh;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753783496/pexels-junior-teixeira-1064069-2047905_fq6qtg.jpg);
+  background: url(https://res.cloudinary.com/dhqg6vmko/image/upload/v1753864104/pexels-timmossholder-942317_e9156g.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
